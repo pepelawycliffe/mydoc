@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_header_selector"
+    android:layout_height="match_parent"
+    tools:context=".Vitals">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="39dp"
+        android:text=" Patient Vitals form"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#ACA1A1"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Patient Name:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:id="@+id/PatientName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="@drawable/round"
+            android:hint="Enter  Patient Name.."
+            android:layout_marginLeft="3dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visit Date:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+        <EditText
+            android:id="@+id/Visit_Date"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="@drawable/round"
+            android:hint="Enter Visit Date.."
+            android:layout_marginLeft="13dp"
+            android:inputType="datetime" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+        <EditText
+            android:id="@+id/Height"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="@drawable/round"
+            android:hint="Enter Height (In CM).."
+            android:layout_marginLeft="32dp"
+            android:inputType="text" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Weight :"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+        <EditText
+            android:id="@+id/Weight"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="@drawable/round"
+            android:hint="Enter  Weight (In KG)
+.."
+            android:layout_marginLeft="32dp"
+            android:inputType="text" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/BMI"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="42dp"
+            android:background="@drawable/round"
+            android:hint="Enter BMI.."
+            android:inputType="text"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="170dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/round_corner"
+            android:text="Close"
+            android:textColor="#F5FBF6" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="176dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/round_corner"
+            android:text="Save"
+            android:textColor="#F5FBF6" />
+    </LinearLayout>
+
+
+</LinearLayout>
